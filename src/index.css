@@ -1,0 +1,14 @@
+@import "tailwindcss";
+@import url('https://fonts.cdnfonts.com/css/petrov-sans-trial');
+
+* {
+    font-family: 'Petrov Sans', sans-serif; /* Substitua por 'Petrov Sans' ou qualquer outra fonte */
+}
+
+
+/* Definição de variáveis de cor */
+:root {
+  --primaria: #001A4A;
+  --secundaria: #ABE0F9;
+  --terciaria: #ffffff;
+}
