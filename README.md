@@ -49,8 +49,6 @@ Para rodar o projeto localmente, siga os passos abaixo:
 4. Inicie o servidor de desenvolvimento:
    ```bash
    npm run dev
-   
-O projeto estará disponível em http://localhost:3000.
 
 ## Licença
 Este projeto está licenciado sob a Licença MIT. Consulte o arquivo LICENSE para mais detalhes.
