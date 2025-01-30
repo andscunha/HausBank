@@ -62,36 +62,36 @@ const Navbar: React.FC = () => {
 
         {/* Botão do menu hamburguer (visível apenas em mobile) */}
         <button
-          onClick={toggleMenu}
-          className="md:hidden flex items-center p-2 text-black focus:outline-none"
-        >
-          <span className="mr-2">Menu</span>
-          <span
-            id="hamburguer"
-            className={`block w-5 relative transition-transform ${
-              isMenuOpen ? 'transform rotate-180' : ''
-            }`}
-          >
-            {/* Linha superior */}
-            <span
-              className={`block w-5 h-0.5 bg-black mb-1 transition-transform ${
-                isMenuOpen ? 'rotate-45 translate-y-1.5' : ''
-              }`}
-            ></span>
-            {/* Linha do meio */}
-            <span
-              className={`block w-5 h-0.5 bg-black mb-1 transition-opacity ${
-                isMenuOpen ? 'opacity-0' : 'opacity-100'
-              }`}
-            ></span>
-            {/* Linha inferior */}
-            <span
-              className={`block w-5 h-0.5 bg-black transition-transform ${
-                isMenuOpen ? '-rotate-45 -translate-y-1.5' : ''
-              }`}
-            ></span>
-          </span>
-        </button>
+  onClick={toggleMenu}
+  className="md:hidden flex items-center p-2 text-black focus:outline-none"
+>
+  <span className="mr-2">Menu</span>
+  <span
+    id="hamburguer"
+    className={`block w-5 relative transition-transform duration-500 ${
+      isMenuOpen ? 'transform rotate-180' : ''
+    }`}
+  >
+    {/* Linha superior */}
+    <span
+      className={`block w-5 h-0.5 bg-black mb-1 transition-all duration-500 ${
+        isMenuOpen ? 'rotate-45 translate-y-1.5' : ''
+      }`}
+    ></span>
+    {/* Linha do meio */}
+    <span
+      className={`block w-5 h-0.5 bg-black mb-1 transition-opacity ${
+        isMenuOpen ? 'opacity-0' : 'opacity-100'
+      }`}
+    ></span>
+    {/* Linha inferior */}
+    <span
+      className={`block w-5 h-0.5 bg-black transition-all duration-500 ${
+        isMenuOpen ? '-rotate-45 -translate-y-1.5' : ''
+      }`}
+    ></span>
+  </span>
+</button>
       </div>
 
       {/* Menu mobile (visível apenas em mobile) */}
