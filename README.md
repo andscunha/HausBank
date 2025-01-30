@@ -1,50 +1,54 @@
-# React + TypeScript + Vite
+# Redesign da Landing Page - HausBank
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Visão Geral
 
-Currently, two official plugins are available:
+Este projeto é um redesign da landing page do **HausBank**, um banco digital focado em soluções financeiras para o setor imobiliário e serviços financeiros personalizados. O objetivo foi modernizar a interface e proporcionar uma experiência de usuário mais fluida e responsiva.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Tecnologias Utilizadas
 
-## Expanding the ESLint configuration
+- **React**: Utilizado para construção de interfaces dinâmicas e modulares.
+- **TypeScript**: Fornece tipagem estática, garantindo maior segurança e previsibilidade no código.
+- **TailwindCSS**: Framework CSS utilitário, possibilitando a criação de designs responsivos de forma rápida e personalizável.
+- **Figma**: Utilizado para o protótipo e a criação do design da interface.
+- **Photoshop & Illustrator**: Ferramentas auxiliares para a criação e manipulação de elementos gráficos e visuais.
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+## Processo de Desenvolvimento
 
-- Configure the top-level `parserOptions` property like this:
+O processo começou com a criação do design no **Figma**, visando uma interface limpa e intuitiva. A ideia foi melhorar a experiência de navegação, mantendo a identidade visual do banco. Para a implementação, utilizei **React** e **TypeScript** para criar uma estrutura sólida e escalável. O uso de **TailwindCSS** permitiu criar uma interface totalmente responsiva, com um design adaptável a diferentes dispositivos.
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+## Habilidades Demonstradas
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+Este projeto demonstra minhas competências tanto em **Design** quanto em **Desenvolvimento Front-End**. Ele reflete minha experiência em **UX/UI Design**, transformando ideias visuais em interfaces funcionais e eficientes, além de minha habilidade em programar e estruturar a parte técnica do projeto.
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
+### Habilidades de Design:
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+- **Web Design & UX/UI**: Criação de uma interface agradável, focada na experiência do usuário.
+- **Design Gráfico**: Criação de elementos visuais que complementam a experiência do usuário.
+
+### Habilidades de Desenvolvimento:
+
+- **React & TypeScript**: Criação de componentes reutilizáveis e gestão eficiente do estado da aplicação.
+- **TailwindCSS**: Utilização de classes utilitárias para criar layouts flexíveis e responsivos, sem comprometer o design.
+
+## Rodando o Projeto
+
+Para rodar o projeto localmente, siga os passos abaixo:
+
+1. Clone o repositório:
+   ```bash
+   git clone https://github.com/seuusuario/hausbank-landing-page.git
+
+2. Acesse a pasta do projeto:
+   ```bash
+   cd hausbank-landing-page
+
+3. Instale as dependências:
+   ```bash
+   npm install
+
+4. Inicie o servidor de desenvolvimento:
+   ```bash
+   npm run dev
+
+## Licença
+Este projeto está licenciado sob a Licença MIT. Consulte o arquivo LICENSE para mais detalhes.
