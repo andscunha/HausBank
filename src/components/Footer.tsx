@@ -21,8 +21,8 @@ const Footer: React.FC = () => {
             <h3 className="text-xl font-bold mb-4">Endereço</h3>
             <ul className="space-y-2 text-left">
               {/* Primeiro item com ícone ao lado */}
-              <li className="flex items-center space-x-2">
-                <FaMapMarkerAlt className="text-lg relative top-[-13px]" />
+              <li className="flex items-center space-x-2 w-60">
+                <FaMapMarkerAlt className="text-3xl relative top-[-25px]" />
                 <span>Avenida João Cabral de Mello Neto, 610, bloco 03, Barra da Tijuca, RJ</span>
               </li>
               {/* Outros itens alinhados à direita */}
