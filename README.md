@@ -36,11 +36,11 @@ Para rodar o projeto localmente, siga os passos abaixo:
 
 1. Clone o repositório:
    ```bash
-   git clone https://github.com/seuusuario/hausbank-landing-page.git
+   git clone https://github.com/andscunha/HausBank
 
 2. Acesse a pasta do projeto:
    ```bash
-   cd hausbank-landing-page
+   cd HausBank
 
 3. Instale as dependências:
    ```bash
@@ -49,6 +49,3 @@ Para rodar o projeto localmente, siga os passos abaixo:
 4. Inicie o servidor de desenvolvimento:
    ```bash
    npm run dev
-
-## Licença
-Este projeto está licenciado sob a Licença MIT. Consulte o arquivo LICENSE para mais detalhes.
