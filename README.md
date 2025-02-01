@@ -40,7 +40,7 @@ Para rodar o projeto localmente, siga os passos abaixo:
 
 2. Acesse a pasta do projeto:
    ```bash
-   cd hausbank-landing-page
+   cd HausBank
 
 3. Instale as dependências:
    ```bash
