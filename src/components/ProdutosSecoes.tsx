@@ -1,5 +1,12 @@
 import React from 'react';
-import { FaCheckCircle } from 'react-icons/fa';
+import Cash from '../assets/icon/cash.svg?react';
+import Arrows from '../assets/icon/arrows.svg?react';
+import Wallet from '../assets/icon/wallet.svg?react';
+import Account from '../assets/icon/account_balance.svg?react';
+import CreditCard from '../assets/icon/credit_card.svg?react';
+import Watch from '../assets/icon/watch.svg?react';
+import Shield from '../assets/icon/shield.svg?react';
+import Board from '../assets/icon/presentation_board.svg?react';
 
 const ProdutosSecoes: React.FC = () => {
   return (
@@ -22,7 +29,7 @@ const ProdutosSecoes: React.FC = () => {
           {/* Imagem e Texto */}
           <div className="md:w-1/2 flex flex-col">
             <div className="relative p-0 m-0 overflow-hidden">
-              <img src="/productsection1.png" alt="Produto 1" className="w-full h-full object-cover" />
+              <img src="/productsection1.png" alt="Produto 1" className="w-full h-full object-cover md:rounded-none md:rounded-r-lg" />
               <div className="absolute top-1/2 left-4 md:left-8 lg:left-12 transform -translate-y-1/2 text-left text-white w-[60%] md:w-[85%] lg:w-[70%]">
                 <h3 className="text-lg sm:text-xl md:text-2xl font-semibold">Conta Digital</h3>
                 <p className="text-xs sm:text-sm md:text-base font-light">Contas digitais para pessoas físicas e jurídicas com uma ampla gama de serviços financeiros.</p>
@@ -33,17 +40,31 @@ const ProdutosSecoes: React.FC = () => {
             <div className="px-4 mt-6 md:pl-8 lg:pl-12">
               <div className="space-y-6">
                 <div className="flex items-start space-x-3">
-                  <FaCheckCircle className="text-green-500 text-xl" />
+                  <Cash className="w-6 h-6 text-green-500" />
                   <div className="text-left">
-                    <h4 className="text-xl font-semibold">Abertura Rápida</h4>
-                    <p className="text-sm text-gray-600">Crie sua conta digital em poucos minutos sem burocracia.</p>
+                    <h4 className="text-xl font-semibold">Emissão de boletos</h4>
+                    <p className="text-sm text-gray-600">Emita boletos para cobranças e pagamentos de forma simples e rápida.</p>
                   </div>
                 </div>
                 <div className="flex items-start space-x-3">
-                  <FaCheckCircle className="text-green-500 text-xl" />
+                  <Arrows className="w-6 h-6 text-green-500" />
                   <div className="text-left">
-                    <h4 className="text-xl font-semibold">Cartão Virtual</h4>
-                    <p className="text-sm text-gray-600">Tenha um cartão virtual para compras online com segurança.</p>
+                    <h4 className="text-xl font-semibold">Transferências bancárias</h4>
+                    <p className="text-sm text-gray-600">Realize transferências via TED e PIX com total segurança.</p>
+                  </div>
+                </div>
+                <div className="flex items-start space-x-3">
+                  <Wallet className="w-6 h-6 text-green-500" />
+                  <div className="text-left">
+                    <h4 className="text-xl font-semibold">Compra de criptoativos</h4>
+                    <p className="text-sm text-gray-600">Compre, venda e armazene criptomoedas diretamente pela sua conta.</p>
+                  </div>
+                </div>
+                <div className="flex items-start space-x-3">
+                  <Account className="w-6 h-6 text-green-500" />
+                  <div className="text-left">
+                    <h4 className="text-xl font-semibold">Crédito personalizado</h4>
+                    <p className="text-sm text-gray-600">Linhas de crédito baseadas no seu fluxo de caixa.</p>
                   </div>
                 </div>
               </div>
@@ -51,11 +72,11 @@ const ProdutosSecoes: React.FC = () => {
           </div>
 
           {/* Imagem extra */}
-          <div className="md:w-1/2 flex justify-center items-center mt-6 md:mt-0">
+          <div className="md:w-1/2 flex justify-center items-center mt-10 md:mt-0">
             <img
               src="/section1-model.png"
               alt="Imagem extra 1"
-              className="w-3/4 rounded-lg shadow-lg md:w-full md:rounded-none md:shadow-none"
+              className="w-3/4 rounded-lg shadow-lg md:w-full md:rounded-none md:rounded-l-lg"
             />
           </div>
         </div>
@@ -65,7 +86,7 @@ const ProdutosSecoes: React.FC = () => {
           {/* Imagem e Texto */}
           <div className="md:w-1/2 flex flex-col">
             <div className="relative p-0 m-0 overflow-hidden">
-              <img src="/productsection2.png" alt="Produto 2" className="w-full h-full object-cover" />
+              <img src="/productsection2.png" alt="Produto 2" className="w-full h-full object-cover md:rounded-none md:rounded-l-lg" />
               <div className="absolute top-1/2 right-4 md:right-8 lg:right-12 transform -translate-y-1/2 text-right text-white w-[60%] md:w-[85%] lg:w-[70%]">
                 <h3 className="text-lg sm:text-xl md:text-2xl font-semibold">Pagadoria</h3>
                 <p className="text-xs sm:text-sm md:text-base font-light">Solução completa e automatizada para gestão de pagamentos recorrentes como comissões.</p>
@@ -78,30 +99,30 @@ const ProdutosSecoes: React.FC = () => {
                 {/* Item 1 */}
                 <div className="flex items-start justify-end space-x-3">
                   <div className="text-right flex-1">
-                    <h4 className="text-xl font-semibold">Automação Completa</h4>
-                    <p className="text-sm text-gray-600">Gerencie pagamentos recorrentes de forma automatizada.</p>
+                    <h4 className="text-xl font-semibold">Digitalização de processos</h4>
+                    <p className="text-sm text-gray-600">Pagamentos digitais que eliminam burocracias e erros.</p>
                   </div>
-                  <FaCheckCircle className="text-blue-500 text-xl flex-shrink-0" />
+                  <CreditCard className="w-6 h-6 text-green-500" />
                 </div>
 
                 {/* Item 2 */}
                 <div className="flex items-start justify-end space-x-3">
                   <div className="text-right flex-1">
-                    <h4 className="text-xl font-semibold">Relatórios Detalhados</h4>
-                    <p className="text-sm text-gray-600">Acompanhe todas as transações com relatórios personalizados.</p>
+                    <h4 className="text-xl font-semibold">Automatização</h4>
+                    <p className="text-sm text-gray-600">Agendamento e automação de cobranças para maior eficiência.</p>
                   </div>
-                  <FaCheckCircle className="text-blue-500 text-xl flex-shrink-0" />
+                  <Watch className="w-6 h-6 text-green-500" />
                 </div>
               </div>
             </div>
           </div>
 
           {/* Imagem extra */}
-          <div className="md:w-1/2 flex justify-center items-center mt-6 md:mt-0">
+          <div className="md:w-1/2 flex justify-center items-center mt-10 md:mt-0">
             <img
               src="/section2-model.png"
               alt="Imagem extra 2"
-              className="w-3/4 rounded-lg shadow-lg md:w-full md:rounded-none md:shadow-none"
+              className="w-3/4 rounded-lg shadow-lg md:w-full md:rounded-none md:rounded-r-lg"
             />
           </div>
         </div>
@@ -111,7 +132,7 @@ const ProdutosSecoes: React.FC = () => {
           {/* Imagem e Texto */}
           <div className="md:w-1/2 flex flex-col">
             <div className="relative p-0 m-0 overflow-hidden">
-              <img src="/productsection3.png" alt="Produto 3" className="w-full h-full object-cover" />
+              <img src="/productsection3.png" alt="Produto 3" className="w-full h-full object-cover md:rounded-none md:rounded-r-lg" />
               <div className="absolute top-1/2 left-4 md:left-8 lg:left-12 transform -translate-y-1/2 text-left text-white w-[70%] md:w-[85%] lg:w-[70%]">
                 <h3 className="text-lg sm:text-xl md:text-2xl font-semibold">Tokenização de Ativos</h3>
                 <p className="text-xs sm:text-sm md:text-base font-light">Plataforma de tokenização de ativos imobiliários baseada em blockchain para investimentos fracionados.</p>
@@ -122,17 +143,17 @@ const ProdutosSecoes: React.FC = () => {
             <div className="px-4 mt-6 md:pl-8 lg:pl-12">
               <div className="space-y-6">
                 <div className="flex items-start space-x-3">
-                  <FaCheckCircle className="text-purple-500 text-xl" />
+                  <Shield className="w-6 h-6 text-green-500" />
                   <div className="text-left">
-                    <h4 className="text-xl font-semibold">Investimentos Fracionados</h4>
-                    <p className="text-sm text-gray-600">Acesse investimentos em ativos tokenizados de forma simples.</p>
+                    <h4 className="text-xl font-semibold">Segurança e transparência</h4>
+                    <p className="text-sm text-gray-600">Blockchain garante maior segurança e transparência em todas as transações.</p>
                   </div>
                 </div>
                 <div className="flex items-start space-x-3">
-                  <FaCheckCircle className="text-purple-500 text-xl" />
+                  <Board className="w-6 h-6 text-green-500" />
                   <div className="text-left">
-                    <h4 className="text-xl font-semibold">Transparência com Blockchain</h4>
-                    <p className="text-sm text-gray-600">Tenha segurança e transparência com tecnologia blockchain.</p>
+                    <h4 className="text-xl font-semibold">Acessibilidade</h4>
+                    <p className="text-sm text-gray-600">Participe de projetos imobiliários com investimentos menores.</p>
                   </div>
                 </div>
               </div>
@@ -140,11 +161,11 @@ const ProdutosSecoes: React.FC = () => {
           </div>
 
           {/* Imagem extra */}
-          <div className="md:w-1/2 flex justify-center items-center mt-6 md:mt-0">
+          <div className="md:w-1/2 flex justify-center items-center mt-10 md:mt-0">
             <img
               src="/section3-model.png"
               alt="Imagem extra 3"
-              className="w-3/4 rounded-lg shadow-lg md:w-full md:rounded-none md:shadow-none"
+              className="w-3/4 rounded-lg shadow-lg md:w-full md:rounded-none md:rounded-l-lg"
             />
           </div>
         </div>
