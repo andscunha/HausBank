@@ -106,29 +106,31 @@ const Navbar: React.FC = () => {
       >
         <ul className="flex flex-col space-y-4 p-4" >
           <li>
-            <a href="#Header" className="block p-2 border-b border-gray-200 text-[var(--primaria)] ">
+            <a href="#produtos" className="block p-2 border-b border-gray-200 text-[var(--primaria)] ">
               Produtos
             </a>
           </li>
           <li>
-            <a href="#Header" className="block p-2 border-b border-gray-200 text-[var(--primaria)]">
+            <a href="#pilares" className="block p-2 border-b border-gray-200 text-[var(--primaria)]">
               Nossos Pilares
             </a>
           </li>
           <li>
-            <a href="#Header" className="block p-2 border-b border-gray-200 text-[var(--primaria)]">
+            <a href="#sobre" className="block p-2 border-b border-gray-200 text-[var(--primaria)]">
               Sobre Nós
             </a>
           </li>
           <li>
-            <a href="#Header" className="block p-2 border-b border-gray-200 text-[var(--primaria)]">
+            <a href="https://conta.hausbank.com.br/login" className="block p-2 border-b border-gray-200 text-[var(--primaria)]">
               Entrar
             </a>
           </li>
           <li>
+          <a href="https://conta.hausbank.com.br/select-onboarding" target="_blank" rel="noopener noreferrer">
             <button className="w-full bg-[var(--primaria)] text-white px-4 py-2 rounded-lg cursor-pointer">
               Abrir Conta
             </button>
+            </a>
           </li>
         </ul>
       </div>
