@@ -13,9 +13,11 @@ const Banner: React.FC = () => {
         <p className="text-white mb-6 max-w-lg font-light">
           HAUSBANK. É BANCO. É DIGITAL. É IMOBILIÁRIO
         </p>
+        <a href="https://conta.hausbank.com.br/select-onboarding" target="_blank" rel="noopener noreferrer">
         <button className="border-1 border-[var(--tecearia)] transition duration-300 hover:bg-[var(--secundaria)] hover:border-[var(--secundaria)] hover:text-[var(--primaria)] px-20 py-1.5 rounded-lg text-lg font-light text-white cursor-pointer md:px-12">
           Abrir Conta
         </button>
+        </a>
       </div>
     </section>
   );

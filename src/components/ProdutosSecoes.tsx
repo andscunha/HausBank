@@ -14,7 +14,7 @@ const fadeInRight = {
 
 const ProdutosSecoes: React.FC = () => {
   return (
-    <section>
+    <section id="produtos">
 
       {/* Título da Seção */}
       <div className="container mx-auto text-center py-20">

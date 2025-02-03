@@ -19,7 +19,7 @@ const fadeInTop = {
 
 const Pilares: React.FC = () => {
   return (
-    <section>
+    <section id="pilares">
       <div className="container mx-auto text-center">
         <h2 className="text-3xl font-bold text-[var(--primaria)] mb-4">
           Nossos Pilares

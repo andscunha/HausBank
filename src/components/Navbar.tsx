@@ -35,17 +35,17 @@ const Navbar: React.FC = () => {
         <div className="hidden md:flex w-1/2 justify-center">
           <ul className="flex space-x-8">
             <li>
-              <a href="#Header" className="cursor-pointer hover:text-gray-400">
+              <a href="#produtos" className="cursor-pointer hover:text-gray-400">
                 Produtos
               </a>
             </li>
             <li>
-              <a href="#Header" className="cursor-pointer hover:text-gray-400">
+              <a href="#pilares" className="cursor-pointer hover:text-gray-400">
                 Nossos Pilares
               </a>
             </li>
             <li>
-              <a href="#Header" className="cursor-pointer hover:text-gray-400">
+              <a href="#sobre" className="cursor-pointer hover:text-gray-400">
                 Sobre Nós
               </a>
             </li>
@@ -54,11 +54,15 @@ const Navbar: React.FC = () => {
 
         {/* "Entrar" + Botão (visível apenas em desktop) */}
         <div className="hidden md:flex w-1/4 items-center justify-end space-x-4">
-          <a className="cursor-pointer hover:text-gray-400">Entrar</a>
-          <button className="bg-[var(--primaria)] text-white px-4 py-1.5 rounded-lg cursor-pointer">
-            Abrir Conta
-          </button>
-        </div>
+  <a href="https://conta.hausbank.com.br/login" className="cursor-pointer hover:text-gray-400">
+    Entrar
+  </a>
+  <a href="https://conta.hausbank.com.br/select-onboarding" target="_blank" rel="noopener noreferrer">
+    <button className="bg-[var(--primaria)] text-white px-4 py-1.5 rounded-lg cursor-pointer">
+      Abrir Conta
+    </button>
+  </a>
+</div>
 
         {/* Botão do menu hamburguer (visível apenas em mobile) */}
         <button

@@ -3,15 +3,15 @@ import { FaFacebook, FaTwitter, FaInstagram, FaLinkedin, FaMapMarkerAlt, FaEnvel
 
 const Footer: React.FC = () => {
   return (
-    <div className="flex flex-col relative"> {/* Adicione relative aqui */}
+    <div className="flex flex-col relative">
       <footer className="bg-white text-[var(--primaria)] py-12">
         {/* Imagem de fundo no lado direito */}
         <div
-          className="absolute right-0 top-0 h-full w-36 bg-cover bg-center"
+          className="absolute right-0 top-0 h-full w-36 bg-cover bg-center hidden md:block"
           style={{ backgroundImage: "url('/icon-footer.png')", zIndex: 1, right: '5%' }}
         ></div>
 
-        <div className="max-w-4xl mx-auto px-6 flex justify-center gap-20 relative z-10"> {/* Adicione relative e z-10 aqui */}
+        <div className="max-w-4xl mx-auto px-6 flex flex-col md:flex-row justify-center gap-8 md:gap-20 relative z-10">
           {/* Seção Páginas */}
           <div className="flex flex-col items-start">
             <h3 className="text-xl font-bold mb-4">Páginas</h3>
@@ -27,10 +27,10 @@ const Footer: React.FC = () => {
             <h3 className="text-xl font-bold mb-4">Endereço</h3>
             <ul className="space-y-2 text-left">
               {/* Primeiro item com ícone ao lado */}
-              <li className="flex items-center space-x-2 w-60">
-                <FaMapMarkerAlt className="text-3xl relative top-[-25px]" />
-                <span>Avenida João Cabral de Mello Neto, 610, bloco 03, Barra da Tijuca, RJ</span>
-              </li>
+              <li className="flex items-start space-x-2 w-60 md:w-60">
+  <FaMapMarkerAlt className="text-3xl" /> {/* Removido o posicionamento relativo */}
+  <span>Avenida João Cabral de Mello Neto, 610, bloco 03, Barra da Tijuca, RJ</span>
+</li>
               {/* Outros itens alinhados à direita */}
               <li>CEP: 22775-057</li>
               <li>CNPJ: 57.362.914/0001-10</li>
@@ -57,9 +57,11 @@ const Footer: React.FC = () => {
       </footer>
 
       {/* Retângulo de direitos reservados */}
-      <div className="bg-[var(--secundaria)] text-center py-2 relative z-10"> {/* Adicione relative e z-10 aqui */}
-        <p className="text-sm text-[var(--primaria)]">© 2025 - Haus Bank | Todos os direitos reservados. | Política de Privacidade</p>
-      </div>
+<div className="bg-[var(--secundaria)] text-center py-2 relative z-10">
+  <p className="text-sm text-[var(--primaria)] px-4 md:px-0">
+    © 2025 - Haus Bank | Todos os direitos reservados. | Política de Privacidade
+  </p>
+</div>
     </div>
   );
 };
