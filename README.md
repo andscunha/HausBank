@@ -1,4 +1,4 @@
-# Redesign da Landing Page - HausBank
+# HausBank
 
 ## Visão Geral
 
