@@ -1,12 +1,16 @@
 import React from 'react';
-import Cash from '../assets/icon/cash.svg?react';
-import Arrows from '../assets/icon/arrows.svg?react';
-import Wallet from '../assets/icon/wallet.svg?react';
-import Account from '../assets/icon/account_balance.svg?react';
-import CreditCard from '../assets/icon/credit_card.svg?react';
-import Watch from '../assets/icon/watch.svg?react';
-import Shield from '../assets/icon/shield.svg?react';
-import Board from '../assets/icon/presentation_board.svg?react';
+import { Cash, Arrows, Wallet, Account, CreditCard, Watch, Shield, Board } from '../assets/icon';
+import { motion } from "framer-motion";
+
+const fadeInLeft = {
+  hidden: { opacity: 0, x: -100 },
+  visible: { opacity: 1, x: 0, transition: { duration: 1 } },
+};
+
+const fadeInRight = {
+  hidden: { opacity: 0, x: 100 },
+  visible: { opacity: 1, x: 0, transition: { duration: 1 } },
+};
 
 const ProdutosSecoes: React.FC = () => {
   return (
@@ -25,12 +29,19 @@ const ProdutosSecoes: React.FC = () => {
       <div className="mx-auto text-center max-w-full px-0">
 
         {/* Seção 1 */}
-        <div className="mb-20 flex flex-col md:flex-row md:items-stretch md:gap-12">
+        <motion.div 
+          className="mb-20 flex flex-col md:flex-row-reverse md:items-stretch md:gap-8 lg:gap-12"
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true }}
+          variants={fadeInLeft}
+        >
+        <div className="flex flex-col md:flex-row md:items-stretch md:gap-8 lg:gap-12">
           {/* Imagem e Texto */}
           <div className="md:w-1/2 flex flex-col">
             <div className="relative p-0 m-0 overflow-hidden">
               <img src="/productsection1.png" alt="Produto 1" className="w-full h-full object-cover md:rounded-none md:rounded-r-lg" />
-              <div className="absolute top-1/2 left-4 md:left-8 lg:left-12 transform -translate-y-1/2 text-left text-white w-[60%] md:w-[85%] lg:w-[70%]">
+              <div className="absolute top-1/2 left-4 md:left-8 lg:left-12 transform -translate-y-1/2 text-left text-white w-[70%] md:w-[85%] lg:w-[70%]">
                 <h3 className="text-lg sm:text-xl md:text-2xl font-semibold">Conta Digital</h3>
                 <p className="text-xs sm:text-sm md:text-base font-light">Contas digitais para pessoas físicas e jurídicas com uma ampla gama de serviços financeiros.</p>
               </div>
@@ -73,21 +84,37 @@ const ProdutosSecoes: React.FC = () => {
 
           {/* Imagem extra */}
           <div className="md:w-1/2 flex justify-center items-center mt-10 md:mt-0">
-            <img
-              src="/section1-model.png"
-              alt="Imagem extra 1"
-              className="w-3/4 rounded-lg shadow-lg md:w-full md:rounded-none md:rounded-l-lg"
-            />
+            <motion.div 
+              className="w-full flex justify-center"
+              initial="hidden"
+              whileInView="visible"
+              viewport={{ once: true }}
+              variants={fadeInRight}
+            >
+              <img
+                src="/section1-model.png"
+                alt="Imagem extra 1"
+                className="w-3/4 md:w-full rounded-lg shadow-lg md:rounded-none md:rounded-l-lg"
+              />
+            </motion.div>
           </div>
         </div>
+        </motion.div>
 
         {/* Seção 2 */}
-        <div className="mb-20 flex flex-col md:flex-row-reverse md:items-stretch md:gap-12">
+        <motion.div 
+          className="mb-20 flex flex-col md:flex-row md:items-stretch md:gap-8 lg:gap-12"
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true }}
+          variants={fadeInRight}
+        >
+        <div className="flex flex-col md:flex-row-reverse md:items-stretch md:gap-8 lg:gap-12">
           {/* Imagem e Texto */}
           <div className="md:w-1/2 flex flex-col">
             <div className="relative p-0 m-0 overflow-hidden">
               <img src="/productsection2.png" alt="Produto 2" className="w-full h-full object-cover md:rounded-none md:rounded-l-lg" />
-              <div className="absolute top-1/2 right-4 md:right-8 lg:right-12 transform -translate-y-1/2 text-right text-white w-[60%] md:w-[85%] lg:w-[70%]">
+              <div className="absolute top-1/2 right-4 md:right-8 lg:right-12 transform -translate-y-1/2 text-right text-white w-[90%] md:w-[85%] lg:w-[70%]">
                 <h3 className="text-lg sm:text-xl md:text-2xl font-semibold">Pagadoria</h3>
                 <p className="text-xs sm:text-sm md:text-base font-light">Solução completa e automatizada para gestão de pagamentos recorrentes como comissões.</p>
               </div>
@@ -119,21 +146,37 @@ const ProdutosSecoes: React.FC = () => {
 
           {/* Imagem extra */}
           <div className="md:w-1/2 flex justify-center items-center mt-10 md:mt-0">
-            <img
-              src="/section2-model.png"
-              alt="Imagem extra 2"
-              className="w-3/4 rounded-lg shadow-lg md:w-full md:rounded-none md:rounded-r-lg"
-            />
+            <motion.div 
+              className="w-full flex justify-center"
+              initial="hidden"
+              whileInView="visible"
+              viewport={{ once: true }}
+              variants={fadeInLeft}
+            >
+              <img
+                src="/section2-model.png"
+                alt="Imagem extra 2"
+                className="w-3/4 md:w-full rounded-lg shadow-lg md:rounded-none md:rounded-r-lg"
+              />
+            </motion.div>
           </div>
         </div>
+        </motion.div>
 
         {/* Seção 3 */}
-        <div className="mb-12 flex flex-col md:flex-row md:items-stretch md:gap-12">
+        <motion.div 
+          className="mb-20 flex flex-col md:flex-row-reverse md:items-stretch md:gap-8 lg:gap-12"
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true }}
+          variants={fadeInLeft}
+        >
+        <div className="flex flex-col md:flex-row md:items-stretch md:gap-8 lg:gap-12">
           {/* Imagem e Texto */}
           <div className="md:w-1/2 flex flex-col">
             <div className="relative p-0 m-0 overflow-hidden">
               <img src="/productsection3.png" alt="Produto 3" className="w-full h-full object-cover md:rounded-none md:rounded-r-lg" />
-              <div className="absolute top-1/2 left-4 md:left-8 lg:left-12 transform -translate-y-1/2 text-left text-white w-[70%] md:w-[85%] lg:w-[70%]">
+              <div className="absolute top-1/2 left-4 md:left-8 lg:left-12 transform -translate-y-1/2 text-left text-white w-[90%] md:w-[85%] lg:w-[70%]">
                 <h3 className="text-lg sm:text-xl md:text-2xl font-semibold">Tokenização de Ativos</h3>
                 <p className="text-xs sm:text-sm md:text-base font-light">Plataforma de tokenização de ativos imobiliários baseada em blockchain para investimentos fracionados.</p>
               </div>
@@ -162,14 +205,22 @@ const ProdutosSecoes: React.FC = () => {
 
           {/* Imagem extra */}
           <div className="md:w-1/2 flex justify-center items-center mt-10 md:mt-0">
-            <img
-              src="/section3-model.png"
-              alt="Imagem extra 3"
-              className="w-3/4 rounded-lg shadow-lg md:w-full md:rounded-none md:rounded-l-lg"
-            />
+            <motion.div 
+              className="w-full flex justify-center"
+              initial="hidden"
+              whileInView="visible"
+              viewport={{ once: true }}
+              variants={fadeInRight}
+            >
+              <img
+                src="/section3-model.png"
+                alt="Imagem extra 3"
+                className="w-3/4 md:w-full rounded-lg shadow-lg md:rounded-none md:rounded-l-lg"
+              />
+            </motion.div>
           </div>
         </div>
-
+        </motion.div>
       </div>
     </section>
   );

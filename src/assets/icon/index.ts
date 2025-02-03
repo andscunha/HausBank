@@ -1,0 +1,11 @@
+export { default as Cash } from './cash.svg?react';
+export { default as Arrows } from './arrows.svg?react';
+export { default as Wallet } from './wallet.svg?react';
+export { default as Account } from './account_balance.svg?react';
+export { default as CreditCard } from './credit_card.svg?react';
+export { default as Watch } from './watch.svg?react';
+export { default as Shield } from './shield.svg?react';
+export { default as Board } from './presentation_board.svg?react';
+export { default as Inovaçao } from './inovaçao.svg?react';
+export { default as Eficiencia } from './eficiencia.svg?react';
+export { default as Personalizacao } from './personalizaçao.svg?react';

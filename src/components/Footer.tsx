@@ -1,11 +1,17 @@
-import React from 'react'
-import { FaFacebook, FaTwitter, FaInstagram, FaLinkedin, FaMapMarkerAlt, FaEnvelope } from 'react-icons/fa'
+import React from 'react';
+import { FaFacebook, FaTwitter, FaInstagram, FaLinkedin, FaMapMarkerAlt, FaEnvelope } from 'react-icons/fa';
 
 const Footer: React.FC = () => {
   return (
-    <div className="flex flex-col">
+    <div className="flex flex-col relative"> {/* Adicione relative aqui */}
       <footer className="bg-white text-[var(--primaria)] py-12">
-        <div className="max-w-4xl mx-auto px-6 flex justify-center gap-20">
+        {/* Imagem de fundo no lado direito */}
+        <div
+          className="absolute right-0 top-0 h-full w-36 bg-cover bg-center"
+          style={{ backgroundImage: "url('/icon-footer.png')", zIndex: 1, right: '5%' }}
+        ></div>
+
+        <div className="max-w-4xl mx-auto px-6 flex justify-center gap-20 relative z-10"> {/* Adicione relative e z-10 aqui */}
           {/* Seção Páginas */}
           <div className="flex flex-col items-start">
             <h3 className="text-xl font-bold mb-4">Páginas</h3>
@@ -41,21 +47,21 @@ const Footer: React.FC = () => {
               <FaLinkedin className="text-2xl" />
             </div>
             <div className="flex flex-col items-start mt-6">
-            <div className="flex items-center space-x-2">
-              <FaEnvelope className="text-2xl" />
-              <span>contato@hausbank.com</span>
+              <div className="flex items-center space-x-2">
+                <FaEnvelope className="text-2xl" />
+                <span>contato@hausbank.com</span>
+              </div>
             </div>
-          </div>
           </div>
         </div>
       </footer>
 
       {/* Retângulo de direitos reservados */}
-      <div className="bg-[var(--secundaria)] text-center py-2">
+      <div className="bg-[var(--secundaria)] text-center py-2 relative z-10"> {/* Adicione relative e z-10 aqui */}
         <p className="text-sm text-[var(--primaria)]">© 2025 - Haus Bank | Todos os direitos reservados. | Política de Privacidade</p>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default Footer
+export default Footer;
